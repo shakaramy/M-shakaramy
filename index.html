@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستم نظرسنجی آنلاین</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="survey-container">
+        <h1>نظر شما درباره کیفیت خدمات چیست؟</h1>
+        <form id="survey-form">
+            <label>
+                <input type="radio" name="vote" value="عالی"> عالی
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="خوب"> خوب
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="متوسط"> متوسط
+            </label><br>
+            <label>
+                <input type="radio" name="vote" value="ضعیف"> ضعیف
+            </label><br>
+            <button type="submit" id="submit-btn">ارسال رأی</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@3"></script>
+    <script src="script.js"></script>
+</body>
+</html>
