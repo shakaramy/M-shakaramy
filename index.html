@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>تماس با من</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Persian:wght@400;700&display=swap');
+
+        html {
+            direction: rtl;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background: url('https://s31.picofile.com/file/8474496942/john_wick.jpg') no-repeat center center / cover;
+            font-family: 'Noto Sans Persian', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        .user-container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            animation: appear 1s ease-out forwards;
+            width: 90%;
+            max-width: 600px;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .user-greeting {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .user-message h2 {
+            color: #ffd700;
+            font-size: 1.8rem;
+            margin: 20px 0;
+        }
+
+        .user-message p, .user-message ul {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: right;
+        }
+
+        .user-message ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .user-message ul li {
+            position: relative;
+            padding-right: 20px;
+        }
+
+        .user-message ul li:before {
+            content: "•";
+            color: #ffd700;
+            position: absolute;
+            right: 0;
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 25px;
+            border: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            text-transform: uppercase;
+            display: block;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px auto;
+        }
+
+        .primary {
+            background-color: #ffcc00;
+            color: #000;
+        }
+
+        .primary:hover {
+            background-color: #ffd633;
+        }
+
+        .secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid #ffcc00;
+        }
+
+        .secondary:hover {
+            background-color: #ffcc00;
+            color: #000;
+        }
+
+        @media (max-width: 600px) {
+            .user-container {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+
+            .user-greeting {
+                font-size: 2rem;
+            }
+
+            .user-message h2 {
+                font-size: 1.4rem;
+            }
+
+            .user-message p, .user-message ul {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="user-container">
+        <p class="user-greeting">کاربر گرامی</p>
+        <div class="user-message">
+            <h2>در صورتی که میخواهید با فیلترشکن/VPN دانلود کنید، اشتراک ویژه تهیه نمایید.</h2>
+            <p>در غیر اینصورت فیلترشکن/VPN خود را خاموش نموده و بر روی رفرش صفحه بزنید.</p>
+            <h2>مزایای تهیه اشتراک:</h2>
+            <ul>
+
+                <li>پشتیبانی از طریق تیکت</li>
+            </ul>
+        </div>
+        <div>
+            <a href="https://sibdon.ir/" class="button primary">خرید اشتراک ویژه</a>
+            <a href="javascript:location.reload();" class="button secondary">رفرش صفحه</a>
+            <a href="https://wa.me/yourphonenumber" class="button primary">تماس با واتساپ</a>
+            <a href="mailto:your-email@example.com" class="button secondary">تماس با ایمیل</a>
+        </div>
+    </div>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-M');
+    </script>
+</body>
+
+</html>
